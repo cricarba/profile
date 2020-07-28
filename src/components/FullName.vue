@@ -1,8 +1,10 @@
 <template>
   <div>
-    <span class="letter">{{ FirstName }}</span>
-    <br />
-    <span class="letter lastName">{{ LastName }}</span>
+    <br/>
+    <span class="letter">{{ FirstName }} {{ LastName }}</span>
+    <br/>
+    <br/>
+    
   </div>
 </template>
 
@@ -18,13 +20,10 @@ export default {
 
 <style scoped>
 .letter {
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  font-size: 2em;
+  font-size: 26px;
+    line-height: 1.25;
 }
-.lastName {
-  font-weight: bold;
-}
+ 
 
 @media only screen and (max-width: 600px) {
   .letter {

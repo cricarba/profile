@@ -1,16 +1,15 @@
 <template>
-  <div>
-    <div v-for="certification in Certifications" v-bind:key="certification.id" class="col-1">
-      <div class="col-80">
+  <div class="col-1">
+    <div v-for="certification in Certifications" v-bind:key="certification.id" class="col-40 box">
+      <div>
         <a :href="certification.Location" target="_blank">
-          <span class="Title">{{ certification.Title }}</span>
+          <span class="Title-Bold">{{ certification.Title }}</span>
         </a>
         <br />
         <span
           class="SubTitle"
         >{{ certification.Instituted }} | {{ certification.StartDate }} - {{certification.EndDate}}</span>
-        <br />
-        <br />
+ 
       </div>
     </div>
   </div>

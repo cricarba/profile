@@ -7,7 +7,6 @@
         class="SubTitle"
       >{{ education.Instituted }} | {{ education.StartDate }} - {{education.EndDate}}</span>
       <br />
-      <br />
     </div>
   </div>
 </template>

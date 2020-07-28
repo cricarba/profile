@@ -1,25 +1,27 @@
 <template>
   <div>
-    <div>
-      <i class="icon" v-bind:class="Icon"></i>
-      <span class="SubTitle">{{Value}}</span>
-    </div>
+     
+      <i class="icon" v-bind:class="contact.icon"></i>
+       <a :href="contact.url" target="_blank">
+          <span class="SubTitle">{{contact.value}}</span>
+        </a>
+      
+     
   </div>
 </template>
 <script>
 export default {
   name: "Contact",
   props: {
-    Value: String,
-    Icon: String
+    contact : Object,
   }
 };
 </script>
 <style scoped>
 .icon {
   letter-spacing: 0.5em;
-  font-size: 1.3em;
-  font-weight: bold;
+  font-size: 1;
+ 
   line-height: 1.5;
 }
 

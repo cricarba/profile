@@ -1,13 +1,12 @@
 <template>
-  <div>
-    <div v-for="job in Jobs" v-bind:key="job.id">
+  <div class="col-1">
+    <div v-for="job in Jobs" v-bind:key="job.id" class="col-40 box">
       <span class="Title-Bold">{{ job.Job }}</span>
       <br />
       <span class="SubTitle">{{ job.Company }} | {{ job.StartDate }} - {{job.EndDate}}</span>
       <br />
       <Paragraph :Paragraph="job.Description" />
-      <br />
-      <br />
+
     </div>
   </div>
 </template>

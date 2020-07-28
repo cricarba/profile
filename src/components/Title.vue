@@ -13,9 +13,8 @@ export default {
 </script>
 <style scoped>
 .letter {
-  letter-spacing: 0.5em;
-  text-transform: uppercase;
-  font-size: 1.5em;
+  letter-spacing: 0.1em;  
+  font-size: 0.9em;
   line-height: 3;
 }
 @media only screen and (max-width: 600px) {
